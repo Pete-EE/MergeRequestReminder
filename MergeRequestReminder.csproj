@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <RootNamespace>MergeRequestReminder</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.2-beta2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Engine.cs" />
+      <Compile Remove="Cache.cs" />
+      <Compile Remove="ConsoleMessage.cs" />
+      <Compile Remove="LittleConfig.cs" />
+    </ItemGroup>
+
+</Project>
